@@ -6,17 +6,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<script>
-		function run() {
-			var password = prompt("Harus masukin password yaaa");
+		function run(a) {
+			var password = prompt(a);
 			//Change to your own Password
 			if (password != 'ikanLohan') {
+				run("passowrd masih salah");
 				document.body.innerHTML = '';
 				document.body.innerHTML = 'Password Failed! Reload to Renter Password';
 			} else {
 				alert('Success');
 			}
 		}
-		run();
+		run("Harus masukin password ya");
 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"
