@@ -328,6 +328,9 @@
 		audio.src = "images/perfect.mp3";
 		audio.currentTime = 20;
 
+		document.body.addEventListener("touchmove", function () {
+			audio.play()
+		})
 		document.body.addEventListener("mousemove", function () {
 			audio.play()
 		})
