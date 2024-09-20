@@ -5,6 +5,7 @@
 	<title>Adih Ayen</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<script>
 		function run(a) {
 			var password = prompt(a);
@@ -321,6 +322,15 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
+
+		var audio = document.createElement("AUDIO")
+		document.body.appendChild(audio);
+		audio.src = "images/perfect.mp3";
+		audio.currentTime = 20;
+
+		document.body.addEventListener("mousemove", function () {
+			audio.play()
+		})
 		function openModal(imageSrc) {
 			const modal = document.getElementById("modal");
 			const modalImage = document.getElementById("modalImage");
