@@ -5,7 +5,19 @@
 	<title>Adih Ayen</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	<script>
+		function run() {
+			var password = prompt("Harus masukin password yaaa");
+			//Change to your own Password
+			if (password != 'ikanLohan') {
+				document.body.innerHTML = '';
+				document.body.innerHTML = 'Password Failed! Reload to Renter Password';
+			} else {
+				alert('Success');
+			}
+		}
+		run();
+	</script>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"
 		rel="stylesheet">
